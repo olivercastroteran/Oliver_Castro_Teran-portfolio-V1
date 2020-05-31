@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/images/slide-1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__btns-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+      margin: 0 2rem;
+    }
+  }
+}

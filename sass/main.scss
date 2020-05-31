@@ -1,5 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/animations';
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+@import './components/button';
+@import './components/card';
+@import './components/feature';
+@import './components/form';
+@import './components/skill';
+
+@import './layout/footer';
+@import './layout/header';
+@import './layout/navigation';
+
+@import './pages/home';
