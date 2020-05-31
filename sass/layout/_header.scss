@@ -1,10 +1,25 @@
 .header {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/images/slide-1.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+
+  // Back ground change animation
+  animation: slideBg 15s linear infinite 0s;
+  animation-timing-function: cubic-bezier(1, 0, 0.3, 1);
+  background-image: url(../img/images/slide-1.jpg);
+  background-attachment: fixed;
+
+  &__dark-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
 
   &__logo-box {
     position: absolute;
