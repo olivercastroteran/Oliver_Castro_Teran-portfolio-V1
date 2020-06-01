@@ -45,6 +45,14 @@ body {
     background-color: $color-primary;
     display: inline-block;
   }
+
+  &--yellow {
+    color: $color-secondary;
+  }
+
+  &--yellow::after {
+    background-color: $color-secondary;
+  }
 }
 
 .heading-3 {

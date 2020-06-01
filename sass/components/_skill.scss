@@ -1,0 +1,67 @@
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  &__name {
+    width: 10rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    text-align: center;
+
+    span {
+      font-size: 1.8rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  &__bar-empty {
+    width: 80%;
+    height: 1.5rem;
+    background-color: #cccccc80;
+    border-radius: 5rem;
+    position: relative;
+  }
+
+  &__bar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    background-color: $color-secondary;
+    border-radius: 5rem;
+
+    &.html.load,
+    &.css.load {
+      width: 95%;
+    }
+
+    &.sass.load,
+    &.javascript.load,
+    &.figma.load {
+      width: 90%;
+    }
+
+    &.react.load {
+      width: 85%;
+    }
+
+    &.firebase.load {
+      width: 80%;
+    }
+
+    &.node-js.load {
+      width: 50%;
+    }
+  }
+
+  &__percentage {
+    color: #fff;
+    font-size: 2.2rem;
+  }
+}
+
+.load {
+  animation: loading 1s linear;
+}
