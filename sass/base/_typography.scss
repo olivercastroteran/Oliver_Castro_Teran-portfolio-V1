@@ -27,3 +27,28 @@ body {
     //animation: moveInRight 1s ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: 4.8rem;
+  color: $color-primary;
+  font-weight: 400;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 3px;
+    background-color: $color-primary;
+    display: inline-block;
+  }
+}
+
+.heading-3 {
+  font-size: 3.5rem;
+  color: $color-primary;
+  font-weight: 400;
+}
