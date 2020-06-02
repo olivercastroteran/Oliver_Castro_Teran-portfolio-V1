@@ -20,3 +20,53 @@ window.addEventListener('scroll', () => {
     percentages.forEach((percentage) => (percentage.style.opacity = '0'));
   }
 });
+
+// Filter Projects functionality
+const filterBtns = document.querySelectorAll('.section-projects__filter-btn');
+const projects = document.querySelectorAll('.project-card');
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach((btn) => btn.classList.remove('active'));
+    btn.classList.add('active');
+    const target = btn.getAttribute('data-target');
+
+    projects.forEach((project) => {
+      project.style.opacity = '.5';
+      project.style.transform = 'scale(0.5)';
+      project.style.pointerEvents = 'none';
+
+      if (project.getAttribute('data-id') === target) {
+        project.style.opacity = '1';
+        project.style.transform = 'scale(1)';
+        project.style.pointerEvents = 'all';
+
+        project.addEventListener('mouseover', () => {
+          project.style.transform = 'scale(1.05)';
+          project.style.boxShadow = '7px 12px 12px rgba(0, 0, 0, 0.12)';
+        });
+
+        project.addEventListener('mouseout', () => {
+          project.style.transform = 'scale(1)';
+          project.style.boxShadow = '5px 10px 10px rgba(0, 0, 0, 0.07)';
+        });
+      }
+
+      if (target === 'all') {
+        project.style.opacity = '1';
+        project.style.transform = 'scale(1)';
+        project.style.pointerEvents = 'all';
+
+        project.addEventListener('mouseover', () => {
+          project.style.transform = 'scale(1.05)';
+          project.style.boxShadow = '7px 12px 12px rgba(0, 0, 0, 0.12)';
+        });
+
+        project.addEventListener('mouseout', () => {
+          project.style.transform = 'scale(1)';
+          project.style.boxShadow = '5px 10px 10px rgba(0, 0, 0, 0.07)';
+        });
+      }
+    });
+  });
+});

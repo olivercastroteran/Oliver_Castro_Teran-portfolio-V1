@@ -500,13 +500,13 @@ body {
     border: 2px solid #1f2635;
     border-radius: 7px;
     transition: all 0.2s; }
-  .section-projects__filter-btn.active {
-    color: #fff;
-    background-color: #1f2635; }
   .section-projects__filter-btn:hover {
     color: #fff;
     background-color: #385793;
     border-color: #385793; }
+  .section-projects__filter-btn.active {
+    color: #fff;
+    background-color: #1f2635; }
   .section-projects .projects {
     width: 90%;
     max-width: 120rem;

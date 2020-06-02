@@ -103,15 +103,15 @@
     transition: all 0.2s;
   }
 
-  &__filter-btn.active {
-    color: #fff;
-    background-color: $color-primary;
-  }
-
   &__filter-btn:hover {
     color: #fff;
     background-color: $color-primary-light;
     border-color: $color-primary-light;
+  }
+
+  &__filter-btn.active {
+    color: #fff;
+    background-color: $color-primary;
   }
 
   .projects {
