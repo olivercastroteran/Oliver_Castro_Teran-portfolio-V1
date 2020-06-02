@@ -78,3 +78,50 @@
     opacity: 1;
   }
 }
+
+.section-projects {
+  padding: 6rem 0;
+
+  &__filter {
+    width: 60%;
+    max-width: 75rem;
+    margin: 0 auto 6rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__filter-btn {
+    cursor: pointer;
+    text-align: center;
+    width: 13rem;
+    font-size: 2.4rem;
+    padding: 0.5rem 0.8rem;
+    border: 2px solid $color-primary;
+    border-radius: 7px;
+    transition: all 0.2s;
+  }
+
+  &__filter-btn.active {
+    color: #fff;
+    background-color: $color-primary;
+  }
+
+  &__filter-btn:hover {
+    color: #fff;
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+
+  .projects {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 4rem;
+    align-items: center;
+  }
+}

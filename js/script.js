@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
     percentages.forEach((percentage) => (percentage.style.opacity = '1'));
   }
 
-  if (y + 400 < skillsOffset) {
+  if (y + 500 < skillsOffset) {
     const skills = document.querySelectorAll('.skill__bar-fill');
     skills.forEach((skill) => skill.classList.remove('load'));
 

@@ -32,3 +32,41 @@
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
+
+.btn-project {
+  &--full,
+  &--ghost {
+    text-decoration: none;
+    width: 35%;
+    border: 1px solid $color-primary;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.3rem 0.6rem;
+    border-radius: 100px;
+    transition: all 0.2s;
+  }
+
+  &--full:hover,
+  &--ghost:hover {
+    color: #fff;
+    border: 1px solid $color-primary-light;
+    background-color: $color-primary-light;
+    transform: translateY(-2px);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+
+  &--full:active,
+  &--ghost:active {
+    transform: translateY(0);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  }
+
+  &--full {
+    color: #fff;
+    background-color: $color-primary;
+  }
+
+  &--ghost {
+    color: $color-primary;
+  }
+}
