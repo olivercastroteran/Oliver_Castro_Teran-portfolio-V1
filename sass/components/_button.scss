@@ -36,6 +36,7 @@
 .btn-project {
   &--full,
   &--ghost {
+    cursor: pointer;
     text-decoration: none;
     width: 35%;
     border: 1px solid $color-primary;

@@ -119,6 +119,7 @@ body {
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); }
 
 .btn-project--full, .btn-project--ghost {
+  cursor: pointer;
   text-decoration: none;
   width: 35%;
   border: 1px solid #1f2635;
