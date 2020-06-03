@@ -152,6 +152,9 @@ body {
     background-color: transparent;
     padding: 1rem 2rem;
     font-size: 2rem; }
+  .btn-project--ghost--contact:hover {
+    margin-bottom: 2px;
+    border: 2px solid #1f2635; }
 
 .project-card {
   min-height: 35rem;

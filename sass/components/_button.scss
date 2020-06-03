@@ -77,5 +77,10 @@
       padding: 1rem 2rem;
       font-size: 2rem;
     }
+
+    &--contact:hover {
+      margin-bottom: 2px;
+      border: 2px solid $color-primary;
+    }
   }
 }

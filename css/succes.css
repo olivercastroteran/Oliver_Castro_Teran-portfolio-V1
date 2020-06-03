@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+/* ___________________________________ GENERAL ___________________________________ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 125%;
+}
+
+::selection {
+  color: #ffc75e;
+  background-color: #1098a8;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1f2635;
+  font-weight: 300;
+  font-size: inherit;
+  text-rendering: optimizeLegibility;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 37.5rem;
+  height: 50vh;
+  justify-content: space-between;
+  margin: 20vh auto;
+}
+
+.logo-box img {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.logo-box img:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 270%;
+  color: #feb21f;
+}
+
+h2 {
+  color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  color: #feb21f;
+  padding: 0.5rem 1rem;
+  border: 2px solid #feb21f;
+  border-radius: 100px;
+  transition: all 0.2s;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #feb21f;
+  color: #333;
+}
