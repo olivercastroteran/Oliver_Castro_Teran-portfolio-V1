@@ -1,0 +1,59 @@
+.section-contact {
+  display: flex;
+
+  &__left {
+    width: 60%;
+    padding: 6rem 0;
+    background-color: $color-secondary;
+  }
+
+  &__right {
+    width: 40%;
+    background-image: url(../img/images/bulb.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.form {
+  width: 75%;
+  margin: 0 auto;
+
+  &__group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 6rem;
+  }
+
+  &__input {
+    width: 100%;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $color-primary;
+    font-size: 1.8rem;
+    padding: 0.3rem 0.6rem;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: $color-primary-light;
+    }
+  }
+
+  &__label {
+    opacity: 0;
+    color: $color-secondary;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0.6rem;
+    transition: all 0.2s;
+  }
+
+  &__input:not(:placeholder-shown) + &__label {
+    transform: translateY(-3rem);
+    opacity: 1;
+    color: $color-primary-light;
+  }
+}

@@ -37,7 +37,7 @@
             <a href="#projects" class="navigation__link">Projects</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
+            <a href="#contact" class="navigation__link">Contact</a>
           </li>
           <li class="navigation__item">
             <a
@@ -49,7 +49,12 @@
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Resume</a>
+            <a
+              href="./img/CV Oliver Castro Teran.pdf"
+              download="CV Oliver Castro Teran"
+              class="navigation__link"
+              >Resume</a
+            >
           </li>
         </ul>
       </nav>
@@ -633,6 +638,60 @@
             </div>
           </div>
         </div>
+      </section>
+      <!-- _______________________ CONTACT _______________________ -->
+      <section id="contact" class="section-contact">
+        <div class="section-contact__left">
+          <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">
+              CONTACT ME
+            </h2>
+          </div>
+          <form
+            class="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/pages/success.html"
+          >
+            <div class="form__group">
+              <input
+                type="text"
+                name="name"
+                class="form__input"
+                placeholder="Name"
+                required
+              />
+              <label for="name" class="form__label">Name</label>
+            </div>
+            <div class="form__group">
+              <input
+                type="email"
+                name="email"
+                class="form__input"
+                placeholder="Email"
+                required
+              />
+              <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group">
+              <textarea
+                name="message"
+                rows="5"
+                class="form__input"
+                placeholder="Message"
+                required
+              ></textarea>
+              <label for="message" class="form__label">Message</label>
+            </div>
+            <div class="form__group">
+              <button class="btn-project--ghost btn-project--ghost--contact">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="section-contact__right"></div>
       </section>
     </main>
 

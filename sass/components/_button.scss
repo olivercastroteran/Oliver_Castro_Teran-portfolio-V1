@@ -45,6 +45,7 @@
     padding: 0.3rem 0.6rem;
     border-radius: 100px;
     transition: all 0.2s;
+    outline: none;
   }
 
   &--full:hover,
@@ -69,5 +70,12 @@
 
   &--ghost {
     color: $color-primary;
+
+    &--contact {
+      border: 2px solid $color-primary;
+      background-color: transparent;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
   }
 }

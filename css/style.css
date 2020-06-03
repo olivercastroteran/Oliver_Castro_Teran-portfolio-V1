@@ -127,7 +127,8 @@ body {
   text-align: center;
   padding: 0.3rem 0.6rem;
   border-radius: 100px;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  outline: none; }
 
 .btn-project--full:hover, .btn-project--ghost:hover {
   color: #fff;
@@ -146,6 +147,11 @@ body {
 
 .btn-project--ghost {
   color: #1f2635; }
+  .btn-project--ghost--contact {
+    border: 2px solid #1f2635;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 2rem; }
 
 .project-card {
   min-height: 35rem;
@@ -238,6 +244,50 @@ body {
       width: 6rem; }
   .feature p.feature__text {
     font-size: 1.6rem; }
+
+.section-contact {
+  display: flex; }
+  .section-contact__left {
+    width: 60%;
+    padding: 6rem 0;
+    background-color: #feb221; }
+  .section-contact__right {
+    width: 40%;
+    background-image: url(../img/images/bulb.png);
+    background-size: cover;
+    background-position: center; }
+
+.form {
+  width: 75%;
+  margin: 0 auto; }
+  .form__group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 6rem; }
+  .form__input {
+    width: 100%;
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #1f2635;
+    font-size: 1.8rem;
+    padding: 0.3rem 0.6rem;
+    outline: none; }
+    .form__input::-webkit-input-placeholder {
+      color: #385793; }
+  .form__label {
+    opacity: 0;
+    color: #feb221;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 0.6rem;
+    transition: all 0.2s; }
+  .form__input:not(:placeholder-shown) + .form__label {
+    transform: translateY(-3rem);
+    opacity: 1;
+    color: #385793; }
 
 .skill {
   display: flex;
