@@ -154,7 +154,7 @@ body {
     font-size: 2rem; }
   .btn-project--ghost--contact:hover {
     margin-bottom: 2px;
-    border: 2px solid #1f2635; }
+    border: 2px solid #385793; }
 
 .project-card {
   min-height: 35rem;
@@ -336,6 +336,75 @@ body {
 
 .load {
   animation: loading 1s linear; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #1f2635;
+  padding: 6rem 0;
+  font-size: 1.8rem; }
+  .footer__top {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer__top > * {
+      width: 33.33%;
+      text-align: center; }
+  .footer__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__nav-item a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s; }
+  .footer__nav-item a:hover {
+    opacity: 1; }
+  .footer__logo img {
+    opacity: 0.5;
+    transition: all 0.3s; }
+  .footer__logo img:hover {
+    opacity: 1; }
+  .footer__link-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem; }
+    .footer__link-item p {
+      text-decoration: none;
+      color: #fff;
+      opacity: 0.5;
+      transition: all 0.2s; }
+  .footer__link-item:hover p,
+  .footer__link-item:hover .footer__link-icon {
+    opacity: 1; }
+  .footer__link-icon {
+    width: 3rem;
+    height: 3rem;
+    fill: #fff;
+    opacity: 0.5;
+    margin-right: 2rem;
+    transition: all 0.2s; }
+  .footer__bottom {
+    margin-top: 3rem;
+    color: #fff;
+    display: flex; }
+    .footer__bottom p {
+      opacity: 0.5;
+      margin-right: 1rem; }
+    .footer__bottom a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: #fff;
+      opacity: 0.5; }
+    .footer__bottom a:hover {
+      opacity: 1; }
 
 .header {
   position: relative;
