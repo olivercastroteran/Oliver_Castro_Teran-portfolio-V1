@@ -70,3 +70,13 @@ filterBtns.forEach((btn) => {
     });
   });
 });
+
+// Easter Egg
+window.addEventListener('load', () => {
+  console.log('Vigenère Cipher');
+  console.log(
+    'Yceqnokehokskbj! iki wsciio eh fep, bfg hskc iobo cfvkp diyfstdo hfqahyon :)'
+  );
+  console.log('key: work');
+  console.log('hint: js - forfun');
+});

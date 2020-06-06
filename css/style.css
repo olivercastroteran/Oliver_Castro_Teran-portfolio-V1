@@ -45,7 +45,7 @@ body {
   color: #333; }
 
 .heading-primary {
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
   font-weight: 400;
   letter-spacing: 2px; }
   @media only screen and (max-width: 75em) {
@@ -181,7 +181,6 @@ body {
     padding: 1rem 2rem;
     font-size: 2rem; }
   .btn-project--ghost--contact:hover {
-    margin-bottom: 2px;
     border: 2px solid #385793; }
 
 .project-card {
@@ -492,7 +491,7 @@ body {
   .header__text-box {
     position: absolute;
     min-width: 65rem;
-    top: 48%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
