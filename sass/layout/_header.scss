@@ -25,6 +25,11 @@
     position: absolute;
     top: 4.5rem;
     left: 4.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 3.5rem;
+      left: 3.5rem;
+    }
   }
 
   &__logo {
@@ -33,10 +38,19 @@
 
   &__text-box {
     position: absolute;
-    top: 47%;
+    min-width: 65rem;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      min-width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 55%;
+    }
   }
 
   &__btns-box {
@@ -44,8 +58,16 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+
     & > * {
       margin: 0 2rem;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

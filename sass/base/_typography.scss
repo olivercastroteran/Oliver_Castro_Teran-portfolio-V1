@@ -11,20 +11,45 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
 
+  @media only screen and (max-width: $bp-largest) {
+    margin-bottom: 6rem;
+  }
+
   &--main {
     color: #fff;
     display: block;
     font-size: 7rem;
-    //animation-name: moveInLeft;
-    //animation-duration: 1s;
-    //animation-timing-function: ease-out;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 6.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 5.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 4.5rem;
+      margin: 0 1rem;
+    }
   }
 
   &--sub {
     color: #ccc;
     display: block;
     font-size: 4.5rem;
-    //animation: moveInRight 1s ease-out;
+
+    @media only screen and (max-width: $bp-largest) {
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2.5rem;
+    }
   }
 }
 

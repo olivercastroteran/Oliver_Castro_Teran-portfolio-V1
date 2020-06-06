@@ -8,6 +8,11 @@
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 
   &__img {
@@ -44,6 +49,10 @@
     max-width: 100rem;
     margin: 5rem auto;
 
+    @media only screen and (max-width: $bp-medium) {
+      width: 80%;
+    }
+
     p {
       font-size: 1.9rem;
       color: $grey-light-2;
@@ -63,6 +72,10 @@
     max-width: 100rem;
     margin: 0 auto;
     margin-bottom: 6rem;
+
+    @media only screen and (max-width: $bp-larg) {
+      width: 90%;
+    }
   }
 
   &__github {
@@ -90,6 +103,18 @@
     align-items: center;
     justify-content: space-between;
     list-style: none;
+
+    @media only screen and (max-width: $bp-larg) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 98%;
+    }
   }
 
   &__filter-btn {
@@ -101,6 +126,19 @@
     border: 2px solid $color-primary;
     border-radius: 7px;
     transition: all 0.2s;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 11.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 8.5rem;
+      font-size: 1.7rem;
+    }
   }
 
   &__filter-btn:hover {
@@ -123,5 +161,9 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 4rem;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 60%;
+    }
   }
 }
