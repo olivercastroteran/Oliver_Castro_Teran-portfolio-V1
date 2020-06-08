@@ -51,6 +51,10 @@
     @media only screen and (max-width: $bp-small) {
       top: 55%;
     }
+
+    @media only screen and (orientation: landscape) and (max-width: $bp-medium) {
+      top: 60%;
+    }
   }
 
   &__btns-box {
