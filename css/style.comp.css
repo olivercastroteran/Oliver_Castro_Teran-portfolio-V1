@@ -1,12 +1,12 @@
 @keyframes slideBg {
   0% {
-    background-image: url(../img/images/slide-1.jpg); }
+    background-image: url(../img/images/slide-1.webp); }
   33% {
-    background-image: url(../img/images/slide-2.jpg); }
+    background-image: url(../img/images/slide-2.webp); }
   66% {
-    background-image: url(../img/images/slide-3.jpg); }
+    background-image: url(../img/images/slide-3.webp); }
   100% {
-    background-image: url(../img/images/slide-1.jpg); } }
+    background-image: url(../img/images/slide-1.webp); } }
 
 @keyframes loading {
   0% {
@@ -299,7 +299,7 @@ body {
         width: 100%; } }
   .section-contact__right {
     width: 40%;
-    background-image: url(../img/images/bulb.png);
+    background-image: url(../img/images/bulb.webp);
     background-size: cover;
     background-position: center; }
     @media only screen and (max-width: 30em) {
@@ -479,7 +479,7 @@ body {
   backface-visibility: hidden;
   animation: slideBg 15s linear infinite 0s;
   animation-timing-function: cubic-bezier(1, 0, 0.3, 1);
-  background-image: url(../img/images/slide-1.jpg);
+  background-image: url(../img/images/slide-1.webp);
   background-attachment: fixed; }
   .header__dark-filter {
     position: absolute;
