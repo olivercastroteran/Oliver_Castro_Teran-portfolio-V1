@@ -548,13 +548,15 @@ body {
       right: 4rem; } }
 
 .navigation__background {
-  width: 0;
-  height: 0;
+  width: 35vw;
+  height: 100vh;
+  transform: translateX(100%);
   position: fixed;
   top: 0;
   right: 0;
   background-image: radial-gradient(#385793, #1f2635);
-  z-index: 1000; }
+  z-index: 1000;
+  transition: all 0.3s; }
 
 .navigation__nav {
   height: 100vh;
@@ -562,6 +564,7 @@ body {
   top: 0;
   right: 0;
   z-index: 1500;
+  transition: all 0.4s;
   opacity: 0;
   width: 0; }
 
@@ -585,13 +588,17 @@ body {
   color: #fff;
   text-decoration: none;
   transition: all 0.3s; }
+  @media screen and (max-width: 50em) and (orientation: landscape) {
+    .navigation__link:link, .navigation__link:visited {
+      font-size: 2rem;
+      padding: 0.3rem 0.6rem;
+      margin-right: 5rem; } }
 
 .navigation__link:hover, .navigation__link:active {
   color: #feb221; }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  width: 35vw;
-  height: 100vh; }
+  transform: translateX(0); }
   @media only screen and (max-width: 37.5em) {
     .navigation__checkbox:checked ~ .navigation__background {
       width: 50vw; } }

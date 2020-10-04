@@ -23,13 +23,15 @@
   }
 
   &__background {
-    width: 0;
-    height: 0;
+    width: 35vw;
+    height: 100vh;
+    transform: translateX(100%);
     position: fixed;
     top: 0;
     right: 0;
     background-image: radial-gradient($color-primary-light, $color-primary);
     z-index: 1000;
+    transition: all 0.3s;
   }
 
   &__nav {
@@ -38,6 +40,7 @@
     top: 0;
     right: 0;
     z-index: 1500;
+    transition: all 0.4s;
 
     opacity: 0;
     width: 0;
@@ -67,6 +70,12 @@
       color: #fff;
       text-decoration: none;
       transition: all 0.3s;
+
+      @media screen and (max-width: $bp-medium) and (orientation: landscape) {
+        font-size: 2rem;
+        padding: 0.3rem 0.6rem;
+        margin-right: 5rem;
+      }
     }
 
     &:hover,
@@ -77,8 +86,7 @@
 
   // Functionality
   &__checkbox:checked ~ &__background {
-    width: 35vw;
-    height: 100vh;
+    transform: translateX(0);
 
     @media only screen and (max-width: $bp-small) {
       width: 50vw;
