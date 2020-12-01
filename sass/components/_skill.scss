@@ -52,20 +52,23 @@
 
     &.sass.load,
     &.javascript.load,
-    &.figma.load {
+    &.figma.load,
+    &.react.load {
       width: 90%;
     }
 
-    &.react.load {
-      width: 85%;
-    }
-
-    &.firebase.load {
+    &.firebase.load,
+    &.typescript.load {
       width: 80%;
     }
 
-    &.node-js.load {
-      width: 50%;
+    &.node-js.load,
+    &.express.load {
+      width: 70%;
+    }
+
+    &.mongodb.load {
+      width: 55%;
     }
   }
 

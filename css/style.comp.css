@@ -376,14 +376,14 @@ body {
     border-radius: 5rem; }
     .skill__bar-fill.html.load, .skill__bar-fill.css.load {
       width: 95%; }
-    .skill__bar-fill.sass.load, .skill__bar-fill.javascript.load, .skill__bar-fill.figma.load {
+    .skill__bar-fill.sass.load, .skill__bar-fill.javascript.load, .skill__bar-fill.figma.load, .skill__bar-fill.react.load {
       width: 90%; }
-    .skill__bar-fill.react.load {
-      width: 85%; }
-    .skill__bar-fill.firebase.load {
+    .skill__bar-fill.firebase.load, .skill__bar-fill.typescript.load {
       width: 80%; }
-    .skill__bar-fill.node-js.load {
-      width: 50%; }
+    .skill__bar-fill.node-js.load, .skill__bar-fill.express.load {
+      width: 70%; }
+    .skill__bar-fill.mongodb.load {
+      width: 55%; }
   .skill__percentage {
     opacity: 0;
     color: #fff;
