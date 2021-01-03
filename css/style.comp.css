@@ -33,6 +33,17 @@ html {
 
 body {
   box-sizing: border-box; }
+  body::-webkit-scrollbar {
+    width: 1rem;
+    padding: 0 2px; }
+  body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6); }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.6); }
+    body::-webkit-scrollbar-thumb:hover {
+      background-color: #fff; }
 
 ::selection {
   color: #ffc75e;

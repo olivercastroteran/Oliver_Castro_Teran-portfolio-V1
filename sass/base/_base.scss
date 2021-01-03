@@ -21,6 +21,25 @@ html {
 
 body {
   box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+    padding: 0 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $grey-dark-transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-light-transparent;
+    border-radius: 15px;
+    border: 1px solid $grey-dark-transparent;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
 }
 
 ::selection {
