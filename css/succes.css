@@ -12,8 +12,8 @@ html {
 }
 
 ::selection {
-  color: #ffc75e;
-  background-color: #1098a8;
+  color: #1f2635;
+  background-color: #8ad8bd;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 
 h1 {
   font-size: 270%;
-  color: #feb21f;
+  color: #8ad8bd;
 }
 
 h2 {
@@ -59,9 +59,9 @@ h2 {
   cursor: pointer;
   font-size: 20px;
   background-color: transparent;
-  color: #feb21f;
+  color: #8ad8bd;
   padding: 0.5rem 1rem;
-  border: 2px solid #feb21f;
+  border: 2px solid #8ad8bd;
   border-radius: 100px;
   transition: all 0.2s;
   outline: none;
@@ -69,6 +69,6 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #feb21f;
+  background-color: #8ad8bd;
   color: #333;
 }

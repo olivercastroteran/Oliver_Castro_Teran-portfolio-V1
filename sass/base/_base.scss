@@ -43,6 +43,6 @@ body {
 }
 
 ::selection {
-  color: #ffc75e;
-  background-color: #1098a8;
+  color: $color-primary;
+  background-color: $color-secondary;
 }

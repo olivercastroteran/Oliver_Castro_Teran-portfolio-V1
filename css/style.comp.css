@@ -46,8 +46,8 @@ body {
       background-color: #fff; }
 
 ::selection {
-  color: #ffc75e;
-  background-color: #1098a8; }
+  color: #1f2635;
+  background-color: #8ad8bd; }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -115,9 +115,9 @@ body {
     background-color: #1f2635;
     display: inline-block; }
   .heading-secondary--yellow {
-    color: #feb221; }
+    color: #8ad8bd; }
   .heading-secondary--yellow::after {
-    background-color: #feb221; }
+    background-color: #8ad8bd; }
 
 .heading-3 {
   font-size: 3rem;
@@ -144,24 +144,24 @@ body {
 
 .btn {
   text-decoration: none;
-  border: 2px solid #feb221;
-  border-radius: 100px;
+  border: 2px solid #8ad8bd;
+  border-radius: 1.2rem;
   font-size: 2rem;
   width: 19rem;
   padding: 0.5rem 1rem;
   transition: all 0.2s; }
   .btn--full {
     color: #333;
-    background-color: #feb221;
+    background-color: #8ad8bd;
     text-transform: uppercase; }
   .btn--ghost {
-    color: #feb221; }
+    color: #8ad8bd; }
   .btn--full:hover, .btn--ghost:hover {
     transform: translateY(-3px);
     box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.5);
     color: #fff;
-    background-color: #df9408;
-    border-color: #df9408; }
+    background-color: #7ebfa8;
+    border-color: #7ebfa8; }
   .btn--full:active, .btn--ghost:active {
     transform: translateY(-2px);
     box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); }
@@ -174,14 +174,14 @@ body {
   font-size: 1.3rem;
   text-align: center;
   padding: 0.3rem 0.6rem;
-  border-radius: 100px;
+  border-radius: 1.2rem;
   transition: all 0.2s;
   outline: none; }
 
 .btn-project--full:hover, .btn-project--ghost:hover {
   color: #fff;
-  border: 1px solid #385793;
-  background-color: #385793;
+  border: 1px solid #2c3e50;
+  background-color: #2c3e50;
   transform: translateY(-2px);
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); }
 
@@ -201,7 +201,7 @@ body {
     padding: 1rem 2rem;
     font-size: 2rem; }
   .btn-project--ghost--contact:hover {
-    border: 2px solid #385793; }
+    border: 2px solid #2c3e50; }
 
 .project-card {
   min-height: 35rem;
@@ -277,13 +277,13 @@ body {
     width: 9.6rem;
     height: 9.6rem;
     background-color: #1f2635;
-    border-radius: 50%;
+    border-radius: 1.5rem;
     position: relative;
     transition: all 0.3s; }
     .feature__container:hover {
       background-color: #355289; }
     .feature__container:hover .feature__icon {
-      fill: #feb221; }
+      fill: #8ad8bd; }
   .feature__icon {
     width: 7rem;
     height: 7rem;
@@ -304,7 +304,7 @@ body {
   .section-contact__left {
     width: 60%;
     padding: 6rem 0;
-    background-color: #feb221; }
+    background-color: #8ad8bd; }
     @media only screen and (max-width: 30em) {
       .section-contact__left {
         width: 100%; } }
@@ -334,10 +334,10 @@ body {
     padding: 0.3rem 0.6rem;
     outline: none; }
     .form__input::-webkit-input-placeholder {
-      color: #385793; }
+      color: #2c3e50; }
   .form__label {
     opacity: 0;
-    color: #feb221;
+    color: #8ad8bd;
     font-size: 1.8rem;
     position: absolute;
     top: 0;
@@ -347,7 +347,7 @@ body {
   .form__input:not(:placeholder-shown) + .form__label {
     transform: translateY(-3rem);
     opacity: 1;
-    color: #385793; }
+    color: #2c3e50; }
 
 .skill {
   display: flex;
@@ -383,7 +383,7 @@ body {
     top: 0;
     left: 0;
     height: 1.5rem;
-    background-color: #feb221;
+    background-color: #8ad8bd;
     border-radius: 5rem; }
     .skill__bar-fill.html.load, .skill__bar-fill.css.load {
       width: 95%; }
@@ -565,7 +565,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  background-image: radial-gradient(#385793, #1f2635);
+  background-image: radial-gradient(#2c3e50, #1f2635);
   z-index: 1000;
   transition: all 0.3s; }
 
@@ -606,7 +606,7 @@ body {
       margin-right: 5rem; } }
 
 .navigation__link:hover, .navigation__link:active {
-  color: #feb221; }
+  color: #8ad8bd; }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: translateX(0); }
@@ -765,8 +765,8 @@ body {
         font-size: 1.7rem; } }
   .section-projects__filter-btn:hover {
     color: #fff;
-    background-color: #385793;
-    border-color: #385793; }
+    background-color: #2c3e50;
+    border-color: #2c3e50; }
   .section-projects__filter-btn.active {
     color: #fff;
     background-color: #1f2635; }
